@@ -75,7 +75,6 @@ hr{border: 0.5px solid #351165;}
 /* techwave-logo */
 
 .techwave-section{
-    border: 2px solid green;
     height: 760px;
    background-image: url(../assets/hero-bg.png);
     background-position: center;
@@ -85,9 +84,8 @@ hr{border: 0.5px solid #351165;}
 .techwave-img{
     width: 350px;
     height: 350px;
-    border: 2px solid green;
-    margin: 0 auto;
-    /* padding: 140px auto 271px; */
+    padding: 0 auto;
+    margin: 140px auto 0;
     position: relative;
     display: flex;
     justify-content: center;
@@ -117,7 +115,7 @@ hr{border: 0.5px solid #351165;}
     background-color: #00FF88;
     padding: 8px 16px;
     z-index: 10;
-    box-shadow: 0 3px 27 0 #00FF88;
+    box-shadow: 0 3px 27px 0 #00FF88;
 }
 
 .techwave-link{
