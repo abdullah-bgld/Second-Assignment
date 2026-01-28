@@ -9,7 +9,7 @@
     font-size: 1rem;
 }
 
-*{
+body{
     background-color: #1A0B2E;
 }
 
@@ -49,6 +49,7 @@ nav ul{
 }
 
 .nav-btn{
+    border: none;
      border-radius: 50px;
      cursor: pointer;
     color: white;
@@ -72,3 +73,111 @@ hr{border: 0.5px solid #351165;}
 /* main section */
 
 /* techwave-logo */
+
+.techwave-section{
+    border: 2px solid green;
+    height: 760px;
+   background-image: url(../assets/hero-bg.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    width: 100%;
+}
+.techwave-img{
+    width: 350px;
+    height: 350px;
+    border: 2px solid green;
+    margin: 0 auto;
+    /* padding: 140px auto 271px; */
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.mic{
+    position: absolute;
+    z-index: 2;
+    padding:77px 116px 97px;
+
+}
+
+.circle{
+    background-color: transparent;
+}
+
+.new-badge{
+    
+    border-radius: 50px;
+    color: #1A0B2E;
+    font-size:1.15rem;
+    font-weight: 600;
+    position:absolute;
+    top: 12px;
+    right: 23px;
+    background-color: #00FF88;
+    padding: 8px 16px;
+    z-index: 10;
+    box-shadow: 0 3px 27 0 #00FF88;
+}
+
+.techwave-link{
+   text-align: center;
+   gap: 8px;
+   margin: 40px auto 0 auto;
+   padding: 0 auto;
+}
+
+.techwave-link h2{
+    color: white;
+    font-size:3.75rem ;
+    padding-bottom: 8px;
+    margin: 0;
+    /* padding-top: 40px; */
+}
+
+.techwave-link p{
+    color: white;
+     padding-top: 8px;
+    padding-bottom: 24px;
+    color: #FFFFFF;
+    opacity: 0.8;
+    margin: 0 auto;
+}
+
+.techwave-btn{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+
+}
+
+.spotify{
+    cursor: pointer;
+    width: 200px;
+    height: 44px;
+    gap: 8px;
+    border: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: 600;
+    color: white;
+    border-radius: 50px;
+    background: linear-gradient(to top right,#F7E93F 0%,#FB09B4 51%,#9100F8 100%);
+}
+
+.subscribe{
+    background-color: transparent;
+   cursor: pointer;
+    width: 147px;
+    height: 44px;
+    gap: 8px;
+    border: 1px solid #00FF88;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: 600;
+    color: #00FF88;
+    border-radius: 50px;
+}
