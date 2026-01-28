@@ -9,6 +9,10 @@
     font-size: 1rem;
 }
 
+*{
+    max-width: 1600px;
+}
+
 body{
     background-color: #1A0B2E;
 }
@@ -16,6 +20,7 @@ body{
 /* Nav Section */
 
 .nav-container{
+    height: 76px;
     display: flex;
     justify-items: center;
     justify-content:space-around;
@@ -75,21 +80,22 @@ hr{border: 0.5px solid #351165;}
 /* techwave-logo */
 
 .techwave-section{
-    height: 760px;
    background-image: url(../assets/hero-bg.png);
     background-position: center;
     background-repeat: no-repeat;
+    background-size: cover;
     width: 100%;
 }
 .techwave-img{
     width: 350px;
     height: 350px;
     padding: 0 auto;
-    margin: 140px auto 0;
+    margin:140px auto 0;
     position: relative;
     display: flex;
     justify-content: center;
     align-items: center;
+    /* overflow: visible; */
 }
 
 .mic{
@@ -100,6 +106,7 @@ hr{border: 0.5px solid #351165;}
 }
 
 .circle{
+    position: relative;
     background-color: transparent;
 }
 
@@ -178,4 +185,140 @@ hr{border: 0.5px solid #351165;}
     font-weight: 600;
     color: #00FF88;
     border-radius: 50px;
+}
+
+.about hr{
+    max-width: 1200px;
+    width: 100%;
+    opacity: 0.1;
+    border: none;
+    height: 1px;
+    background-color: white;
+    margin: 40px 0;
+}
+
+.about{
+    /* border: 2px solid green; */
+    text-align: center;
+    color: white;
+    margin: 0 auto;
+}
+
+.about-section{
+    border: 3px solid red;
+    width: 1200px;
+    text-align: center;
+    margin: 0 auto;
+}
+
+.about-section h2{
+    font-weight: 700;
+    color: white;
+    font-size:3rem;
+}
+
+/* achievement section */
+
+.achievement{
+    margin-top: 160px;
+    /* border: 2px solid green; */
+}
+
+.achievement-container{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    /* border: 2px solid green; */
+    gap: 80px;
+    margin:0 auto;
+    padding: 0 200px;
+}
+
+.achieve{
+    /* gap: 16px; */
+    padding: 0 auto;
+    margin: 0;
+    text-align: center;}
+.achieve h2{
+        font-size: 3rem;
+        color: #00FF88;
+        font-weight: 900;
+        margin: 0;
+        transition: all 0.3s ease;
+}
+
+.achieve:hover h2{
+    transform: scale(1.1);
+    transition: all 0.3s ease;}
+
+
+.achieve p{
+    font-size: 1rem;
+    opacity: 0.8;
+    color: white;
+    margin: 0;
+    padding-top: 16px;
+}
+
+.why-choose{
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin: 0 auto;
+    width: 100%;
+}
+
+.why-choose-title h1{
+    color: white;
+    font-size: 3rem;
+    font-weight: 700;
+    padding-top: 120px;
+    padding-bottom: 40px;
+    text-align: center;
+}
+
+.why-choose h2{
+color: white;
+font-size: 1.rem;
+font-weight: 700;
+}
+
+.why-choose p{
+    font-size: 1rem;
+    color: white;
+}
+
+.box1, .box2, .box3, .box4, .box5 {
+    background-color: #351165;
+    padding: 32px;
+    border-radius: 24px;
+    text-align: left;
+    transition: all 0.3s ease;}
+
+.box1:hover, .box2:hover, .box3:hover, .box4:hover, .box5:hover{
+    transform: scale(1.02);
+}
+
+.box1 { grid-area: box1; }
+.box2 { grid-area: box2; }
+.box3 { grid-area: box3; }
+.box4 { grid-area: box4; }
+.box5 { grid-area: box5; }
+
+.why-choose-box{
+    /* background-color: #351165; */
+    display: grid;
+grid-template-columns: repeat(3, 1fr);
+    grid-template-areas:
+        "box1 box2 box2"
+        "box3 box3 box4"
+        "box5 box5 box4";
+    /* border: 2px solid yellow; */
+    gap: 30px   ;
+    border-radius: 40px;
+   gap: 24px;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px 100px;
 }
