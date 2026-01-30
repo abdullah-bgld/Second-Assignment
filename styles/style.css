@@ -21,15 +21,12 @@ body{
 .nav-btn:hover, .spotify:hover, .subscribe:hover {
     transform: translateY(-3px);
     filter: brightness(1.2);
-    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
     cursor: pointer;
 
 }
 
-.nav-btn:active, .spotify:active, .subscribe:active {
-    transform: translateX(1.5px);
-}
-
+nav a:hover {
+    color: #00FF88;}
 
 /* Nav Section */
 
@@ -44,6 +41,7 @@ body{
 nav a{
     color: white;
     text-decoration: none;
+    transition: 0.3s ease;
 }
 
 nav ul{
@@ -85,9 +83,17 @@ nav i{
     padding-left: 4px;
 }
 
+.nav-hr{
+    width: 100%;
+    margin: 0;
+    border: none;
+    height: 1px;
+    background-color: #351165;
+}
+
 .nav-phn{
     cursor: pointer;
-    display: none;
+    visibility: hidden;
 }
 
 
@@ -109,12 +115,11 @@ hr{border: 0.5px solid #351165;}
     width: 350px;
     height: 350px;
     padding: 0 auto;
-    margin:140px auto 0;
+    margin:40px auto 0;
     position: relative;
     display: flex;
     justify-content: center;
     align-items: center;
-    /* overflow: visible; */
 }
 
 .mic{
@@ -156,7 +161,6 @@ hr{border: 0.5px solid #351165;}
     font-size:3.75rem ;
     padding-bottom: 8px;
     margin: 0;
-    /* padding-top: 40px; */
 }
 
 .techwave-link p{
@@ -251,7 +255,6 @@ hr{border: 0.5px solid #351165;}
 }
 
 .achieve{
-    /* gap: 16px; */
     padding: 0;
     margin: 0;
     text-align: center;}
@@ -365,24 +368,23 @@ font-weight: 700;
     display: flex;
     flex-direction: column;
     width:380px;
-    height:480px;
-    /* padding:0 24px ;
-    margin: 0; */
+    height:100%;
     border-radius: 24px;
     transition: all 0.3s ease;}
 
 .video{
     border-top-left-radius: 24px;
     border-top-right-radius: 24px;
-    /* width: 380px; 
-    height: 214px; */
 }
 
 .yt-box1 h3, .yt-box2 h3, .yt-box3 h3{
     color: white;
     font-size: 1.5rem;
     font-weight: 700;
-    padding: 0 24px;
+    margin-left: 24px;
+    margin-right: 24px;
+    margin-top: 24px;
+    margin-bottom: 12px;
 }
 
 .yt-box1 p, .yt-box2 p, .yt-box3 p{
@@ -390,7 +392,10 @@ font-weight: 700;
     font-size: 1rem;
     font-weight: 400;
     opacity: 60%;
-    padding: 0 24px;
+    margin-left: 24px;
+    margin-right: 24px;
+    margin-top: 0;
+    margin-bottom: 0;
 }
 
 .duration{
@@ -400,7 +405,7 @@ font-weight: 700;
     gap: 8px;
     color: #00ffa3;
     font-weight: bold;
-    padding: 0 24px;
+    margin:12px 24px 24px;
     font-size: 14px;
 }
 
@@ -412,7 +417,6 @@ font-weight: 700;
 
 .meet{
     margin: 120px auto;
-    /* margin: 0 auto; */
     max-width: 1200px;
     
 }
@@ -461,31 +465,23 @@ font-weight: 700;
 
 
 .icon{
-    display: flex;
-    justify-content: flex-start;
-    gap: 8px;
-    margin: 0;
-    padding: 0;
-
-    
+     display: flex;
+    gap: 12px;
+    margin-top: 16px;
 }
 
 .h-icon {
-min-width: 20px;
-min-height: 20px;
-padding: 10px;
-margin: 0;
-border: 1px solid white;
-border-radius:50%;
-justify-content: center;
-border-radius: 30px;
-margin-left: 8px;
+padding: 8px;
+border: 1px solid rgba(255,255,255,0.6);
+border-radius: 50%;
+object-fit: contain;
+cursor: pointer;
+transition: all 0.3s ease;
 }
 
 .h-icon:hover{
-    cursor: pointer;
-    transition: all 0.3s ease-in;
-
+    border-color: transparent;
+    transform: translateY(-3px);
 }
 
 /* footer section */
@@ -496,10 +492,8 @@ margin-left: 8px;
     padding-top:40px;
     background-image: url(../assets/footer-bg.png);
     background-repeat: no-repeat;
-    background-size:cover;
+    background-size:100vw 70vh;
     background-position: center;
-    min-height: 412px;
-    width: 100%;
 
 }
 
@@ -559,4 +553,165 @@ margin-bottom: 0;
     padding-bottom: 120px;
     font-weight: 400;
 }
+
+/* MEDIA SCREEN SECTION */
+
+@media screen and (max-width:576px)
+{
+
+* {
+        max-width: 100%;
+        box-sizing: border-box;
+    }
+
+    .nav-container{
+        .nav-container {
+        justify-content: space-between;
+        padding: 0 20px;}
+        
+    }
+    .navbar ul{
+        visibility: hidden;
+    }
+
+    .nav-btn {
+        display: none;
+    }
+    
+    .nav-phn{
+        visibility: visible;
+    padding: 0;}
+
+    .navbar{
+        width: 440px;
+        background-size: cover;
+    }
+
+    .nav-hr{
+        width: 100%;
+    }
+
+    .nav-tech{font-size: 2rem;}
+
+    .about, .yt, .meet{
+        margin-left: 20px;
+    }
+
+    .techwave-img {
+        width: 250px;
+        height: 250px;
+    }
+    .techwave-link h2 { font-size: 2rem; }
+
+
+
+.circle{
+    width: 200px;
+    height: 200px;
+    position: relative;
+}
+.mic{
+   width: 47px;
+        padding: 0;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+}
+
+.achievement-container{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    padding: 0 20px;
+    gap: 20px;
+}
+
+.about-section h2{
+    font-size: 2rem;
+}
+
+.about-section p{
+    font-size: 1rem;
+}
+
+.achieve h2 {
+        font-size: 2.5rem;}
+
+.achieve p{
+    font-size: 1rem;
+}
+
+.why-choose-box{
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-areas: none;
+    gap: 16px;
+
+}
+
+.box1, .box2, .box3, .box4, .box5{
+    grid-area: auto;
+    width: 100%;
+}
+
+.yt-container{
+    display: grid;
+    grid-template-columns: 1fr;
+    justify-items: center;
+}
+
+.meet-card{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+}
+
+.meet-card p, .meet-card h4{
+    padding: 0;
+    margin: 16px 24px;
+}
+
+.host-img{
+    margin-top: 24px;
+    margin-bottom: 16px;
+    padding :0;
+}
+
+.icon{
+    justify-content: center;
+    margin-bottom:14px;
+
+}
+
+.footer-title{
+    background-size: 115vh 100vw;
+}
+
+
+.footer-icon {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 16px;
+        justify-items: center;
+        margin:24px 70px;
+    }
+
+.footer-title h2{
+    margin: 0;
+    padding:0 ;
+
+}
+
+
+    .copyright {
+        font-size: 14px;
+        padding-top: 20px;
+        padding-bottom: 40px;
+    }
+
+}
+
 
