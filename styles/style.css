@@ -566,7 +566,9 @@ margin-bottom: 0;
         box-sizing: border-box;
     }
 
-
+.achievement-container, .yt, .about-section, .meet-card{
+    justify-items: center;
+}
 
     .nav-container {
     display: flex;
@@ -594,9 +596,9 @@ margin-bottom: 0;
 
     .nav-tech{font-size: 2rem;}
 
-    .about, .yt, .meet{
+    /* .about, .yt, .meet{
         margin-left: 20px;
-    }
+    } */
 
     .techwave-img {
         width: 250px;
