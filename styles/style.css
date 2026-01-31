@@ -566,6 +566,19 @@ margin-bottom: 0;
         box-sizing: border-box;
     }
 
+ .about,
+  .achievement,
+  .why-choose
+  .yt,
+  .meet{
+    width: 100%;
+    /* margin: 0 auto;
+    padding: 0 20px; */
+    box-sizing: border-box;
+    text-align: center;
+  }
+
+
     .nav-container {
     display: flex;
     justify-content: space-between;
@@ -656,6 +669,7 @@ margin-bottom: 0;
     display: grid;
     grid-template-columns: 1fr;
     justify-items: center;
+    justify-content: center;
 }
 
 .meet-card{
@@ -664,7 +678,7 @@ margin-bottom: 0;
     justify-content: center;
     align-items: center;
     text-align: center;
-    margin: 0;
+    margin: 0 20px;
     padding: 0;
 }
 
